@@ -1,0 +1,24 @@
+/* *,
+*::before,
+*::after{
+    
+} */
+
+.wrapper{
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    margin: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    display: flex;
+}
+
+@media screen and (max-witdh: 9600px) {
+    .wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+        display: none;
+    }
+}
