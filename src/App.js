@@ -8,6 +8,8 @@ import Services from './components/pages/Services/Services';
 import Products from './components/pages/Products/Products';
 import SignUp from './components/pages/SignUp/SignUp';
 import WhoMe from './components/pages/WhoWe/WhoWe';
+import Login from './components/Login/Login'
+import Profile from './components/pages/Profile/Profile';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route path='/products' component={Products} />
       <Route path='/sign-up' component={SignUp} />
       <Route path='/forwhom' component={WhoMe} />
+      <Route path='/login' component={Login} />
+      <Route path='/profile' component={Profile} />
     </Switch>
     <Footer />
   </Router>
