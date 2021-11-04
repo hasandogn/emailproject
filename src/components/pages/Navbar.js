@@ -34,8 +34,8 @@ function Navbar() {
                     <div className="navbar-container container">
                         <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
                             <IoRocketSharp className="navbar-icon" />
-                        emailrockets
-                    </Link>
+                            emailrockets
+                        </Link>
                         <div className="menu-icon" onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars />}
                         </div>
@@ -43,35 +43,35 @@ function Navbar() {
                             <li className='nav-item'>
                                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                                     Ana Sayfa
-                            </Link>
+                                </Link>
                             </li>
                             <li className='nav-item'>
                                 <Link to='/forwhom' className='nav-links' onClick={closeMobileMenu}>
                                     Kimler İçin?
-                            </Link>
+                                </Link>
                             </li>
                             <li className='nav-item'>
                                 <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
                                     Hizmetler
-                            </Link>
+                                </Link>
                             </li>
                             <li className='nav-item'>
                                 <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                                     Ürünler
-                            </Link>
+                                </Link>
                             </li>
                             <li className="nav-btn">
                                 {button ? (
-                                    <Link to='/signup' className='btn-link'>
-                                        <Button buttonStyle='btn--outline'>Üye ol</Button>
+                                    <Link to='/login' className='btn-link'>
+                                        <Button buttonStyle='btn--outline'>Giriş Yap</Button>
                                     </Link>
                                 ) : (
-                                    <Link to='/signup' className='btn-link' onClick={closeMobileMenu}>
+                                    <Link to='/login' className='btn-link' onClick={closeMobileMenu}>
                                         <Button
                                             buttonStyle='btn--outline'
                                             buttonSize='btn--mobile'>
-                                            Üye ol
-                                    </Button>
+                                            Giriş Yap
+                                        </Button>
                                     </Link>
                                 )}
                             </li>
